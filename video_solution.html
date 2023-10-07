@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ytp-swatch-background-color{
+        background-color: pink;
+    } 
+</style>
+<body>
+    <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/ESBrUXjBCF8?si=XlwK0M-xDZdltrTR?rel=0&modestbranding=1&autoplay=1&fs=0&color=white" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=1&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div><div><small><a href="https://sms-lån-utan-uc.se/">Sms lån utan uc</a></small></div></iframe> -->
+</body>
+<script>
+    var video = document.getElementById("video");
+  
+    video.addEventListener("ended", function () {
+      // Reload the video when it ends
+      video.src = video.src.replace("&amp;loop=1", "") + "&amp;loop=1";
+    });
+  </script>
+</html>

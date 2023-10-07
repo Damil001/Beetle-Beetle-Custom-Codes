@@ -1,0 +1,49 @@
+.image_container
+{
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+  
+
+}
+.image_wrapper
+{
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+.image_wrapper img
+{
+    max-width: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+
+}
+
+.main_image
+{
+    width: 226px;
+    height: 402px;
+}
+.secondary_image_1
+{
+    width: 144px;
+    min-height: 256px;
+}
+.secondary_image_2
+{
+    width: 128px;
+    min-height: 226px;
+}
+.secondary_image_3
+{
+    width: 104px;
+    min-height: 184px;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  

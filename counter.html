@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        transition: all 0.3s linear;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2 class="counter-numbers">200</h2>
+        <h2 class="counter-numbers">500</h2>
+        <h2 class="counter-numbers">600</h2>
+    </div>
+</body>
+<script>
+    const updateText =  function(initialValue, element) {
+        for(let i = 0 ; i==initialValue; i++)
+        {
+            element.innerHTML = i;
+        }
+
+    }
+
+    const counter_items =  document.querySelectorAll(".counter-numbers");
+    console.log(counter_items);
+    counter_items.forEach( e => {
+        let Target = parseInt( e.textContent );
+        // console.log(Target)
+        let initialvalue = 0;
+        const counting = setInterval(updateCount, 1);
+        function updateCount()
+        {
+            initialvalue++;
+            e.innerText = initialvalue;
+            if(initialvalue === Target)
+            {
+                clearInterval(counting);
+
+            }
+
+        }
+
+    })
+
+
+</script>
+</html>
